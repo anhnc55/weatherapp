@@ -72,7 +72,6 @@ extension WeatherViewModel {
             return forcast
         }.value
         self.currentWeather = currentWeather
-        print(currentWeather?.dewPoint)
     }
     
     func dailyForecast(for location: CLLocation) async {

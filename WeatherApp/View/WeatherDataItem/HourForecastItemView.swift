@@ -25,7 +25,7 @@ struct HourForecastItemView: View {
                 .font(.title2)
                 .symbolVariant(.fill)
                 .symbolRenderingMode(.palette)
-                .foregroundStyle(.yellow,.white)
+                .foregroundStyle((hourWeather.isDaylight && (hourWeather.condition == .mostlyClear || hourWeather.condition == .clear)) ? .yellow : .white)
                 .frame(height: 30)
             
             Text(hourWeather.temperature.formatted(.measurement(width: .abbreviated, usage: .weather)))

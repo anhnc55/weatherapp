@@ -27,8 +27,8 @@ struct FeelslikeView: View {
                     .fontWeight(.semibold)
                 
                 Text(currentWeather.temperature.value > currentWeather.apparentTemperature.value
-                     ? "Feeling cooler with real temperature"
-                     : "Feeling hotter with real temperature")
+                     ? "Humidity is making it feel hotter"
+                     : "Humidity is making it feel cooler")
                     .font(.callout)
                     .fontWeight(.regular)
                 Spacer()

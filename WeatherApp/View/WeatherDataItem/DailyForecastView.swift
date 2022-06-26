@@ -40,7 +40,7 @@ struct DailyForecastView: View {
                                 .font(.title3)
                                 .symbolVariant(.fill)
                                 .symbolRenderingMode(.palette)
-                                .foregroundStyle(.yellow,.white)
+                                .foregroundStyle((cast.condition == .mostlyClear || cast.condition == .clear) ? .yellow : .white)
                                 .frame(width: 30)
                             
                             Text("\(cast.lowTemperature.formatted(.measurement(width: .abbreviated, usage: .weather)))")
@@ -78,7 +78,6 @@ struct DailyForecastView: View {
 
 extension DailyForecastView {
     func temperatureGradient(low: Measurement<UnitTemperature>, high: Measurement<UnitTemperature>) -> LinearGradient {
-        //    print(low.unit == UnitTemperature.celsius)
         var lowTemperature = low.value
         var highTemperature = high.value
         

@@ -35,7 +35,7 @@
 		1B7860EA2862D30900FEBAEB /* WindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindView.swift; sourceTree = "<group>"; };
 		1B7860EC2863021400FEBAEB /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		1B7860EF2863043100FEBAEB /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
-		1B8D4EC3286469BC0084B24E /* WeatherApp.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = WeatherApp.entitlements; sourceTree = "<group>"; };
+		1B8D4EC3286469BC0084B24E /* WeatherApp.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = WeatherApp.entitlements; sourceTree = SOURCE_ROOT; };
 		1B8D4EC42864783C0084B24E /* DailyForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyForecastView.swift; sourceTree = "<group>"; };
 		1B8D4EC62864AA5C0084B24E /* PrecipitationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrecipitationView.swift; sourceTree = "<group>"; };
 		1B8D4EC82864AB5C0084B24E /* FeelslikeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelslikeView.swift; sourceTree = "<group>"; };
@@ -93,10 +93,18 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		1BC8DA9C28685CB5006887D3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1BF3FE952862B21F00DA1902 /* CustomCorner.swift */,
+				1BF3FEA02862B55600DA1902 /* CornerModifier.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		1BF3FE782862B04300DA1902 = {
 			isa = PBXGroup;
 			children = (
-				1B8D4EC3286469BC0084B24E /* WeatherApp.entitlements */,
 				1BF3FE832862B04300DA1902 /* WeatherApp */,
 				1BF3FE822862B04300DA1902 /* Products */,
 			);
@@ -113,6 +121,7 @@
 		1BF3FE832862B04300DA1902 /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				1B8D4EC3286469BC0084B24E /* WeatherApp.entitlements */,
 				1B7860EE2863042400FEBAEB /* ViewModel */,
 				1BF3FE9B2862B39200DA1902 /* Model */,
 				1BF3FE922862B1A700DA1902 /* View */,
@@ -135,10 +144,9 @@
 		1BF3FE922862B1A700DA1902 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1BC8DA9C28685CB5006887D3 /* Helpers */,
 				1B7860E72862D29B00FEBAEB /* WeatherDataItem */,
 				1BF3FE932862B1B300DA1902 /* WeatherView.swift */,
-				1BF3FE952862B21F00DA1902 /* CustomCorner.swift */,
-				1BF3FEA02862B55600DA1902 /* CornerModifier.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -368,10 +376,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = WeatherApp/WeatherApp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WeatherApp/Preview Content\"";
-				DEVELOPMENT_TEAM = SM7PA8B976;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
@@ -386,7 +394,6 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.anhnc.weather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -402,10 +409,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = WeatherApp/WeatherApp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WeatherApp/Preview Content\"";
-				DEVELOPMENT_TEAM = SM7PA8B976;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
@@ -420,7 +427,6 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.anhnc.weather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
