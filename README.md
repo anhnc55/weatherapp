@@ -33,8 +33,8 @@ Before you run the sample code project in Xcode:
 12. On the toolbar, click Run, or choose Product > Run.
 
 # Environment
-* Xcode 12
-* Swift 5
+* Xcode 14
+* Swift 5.7
 
 ## TODO
 * Add charts for daily forecast
