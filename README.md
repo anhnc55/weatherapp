@@ -8,7 +8,7 @@
 # Configure the sample code project
 Before you run the sample code project in Xcode:
 
-1. Download, install, and launch the latest version of Xcode 16.
+1. Download, install, and launch the latest version of Xcode 14.
 
 2. In Safari, visit the Certificates, Identifiers, and Profiles section of the developer Apple website.
 
