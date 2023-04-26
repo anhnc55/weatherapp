@@ -22,7 +22,7 @@ Before you run the sample code project in Xcode:
 
 7. Wait 30 minutes while the service registers your app’s bundle ID.
 
-8. In Xcode, from the Project navigator, select the FlightPlanner project and click the Signing & Capabilities tab.
+8. In Xcode, from the Project navigator, select the WeatherApp project and click the Signing & Capabilities tab.
 
 9. Enter the unique bundle ID from step 4 in the Bundle Identifier field of the FlightPlanner target.
 
